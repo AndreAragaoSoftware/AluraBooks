@@ -10,8 +10,11 @@
 .cabecalho {
     background-color: var(--branco);
     display: flex;
+    /*espaça o os icon para esqueda e direita*/
     justify-content: space-between;
     align-items: center;
+    /*com o positio relative libera mexer no top bottom ect*/
+    position: relative;
 }
 
 .container {
@@ -21,4 +24,18 @@
 
 .container__img {
     padding: 1em;
+}
+
+.lista__menu {
+    /*lista desaparece*/
+    display: none;
+    /*permite que movimente o elemento diacordo com o pai*/
+    position: absolute;
+    top: 100%;
+}
+
+/*se o botão estiver checked ele vai transfomar o display em block
+fazendo com que a lista apareça*/
+.container__botao:checked~.lista__menu {
+    display: block;
 }
