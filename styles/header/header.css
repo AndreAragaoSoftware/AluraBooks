@@ -23,7 +23,7 @@
 }
 
 .container__img {
-    padding: 1em;
+    padding: 0.8em;
 }
 
 .lista__menu {
@@ -32,6 +32,16 @@
     /*permite que movimente o elemento diacordo com o pai*/
     position: absolute;
     top: 100%;
+    width: 60vw;
+}
+
+.lista__menu__link {
+    text-decoration: none;
+    background: var( --azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 /*se o botão estiver checked ele vai transfomar o display em block
@@ -39,3 +49,13 @@ fazendo com que a lista apareça*/
 .container__botao:checked~.lista__menu {
     display: block;
 }
+
+.lista__menu__titulo, .lista__menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista__menu__titulo {
+    color: var(--laranja);
+}
+
